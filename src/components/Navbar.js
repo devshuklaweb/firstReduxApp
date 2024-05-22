@@ -4,7 +4,6 @@ import { Link,useLocation } from 'react-router-dom'
 
 export default function Navbar() {
     let location =  useLocation();
-    console.log(location);
     return (
       <>
         <nav className="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
