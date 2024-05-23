@@ -1,9 +1,10 @@
-//rce
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link,useLocation } from 'react-router-dom'
 
 export default function Navbar() {
     let location =  useLocation();
+    const count = useSelector((state) => state.cart.value)
     return (
       <>
         <nav className="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
@@ -18,7 +19,7 @@ export default function Navbar() {
                         <li className="nav-item"><Link className={`nav-link ${location.pathname === '/shop' ? 'active' : ''} `} aria-current="page" to="/shop">Shop</Link></li>      
                     </ul>
                     <div>
-                        <button disabled={true} className="btn btn-primary">Your Balance: 1000/-</button>
+                        <button disabled={true} className="btn btn-primary">Your Balance: {count}/-</button>
                     </div>
                 </div>
             </div>
