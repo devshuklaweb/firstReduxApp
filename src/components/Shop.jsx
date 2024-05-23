@@ -4,9 +4,9 @@ const Shop = () => {
     return (
         <>
             <div className="container" style={{marginTop:'100px'}}>
-                <h2>Buy pens 100/- Rs.</h2>
+                <h2>Deposit/Withdraw Money</h2>
                 <button className="btn btn-primary mx-2">-</button>
-                  Add to cart  
+                  Update Balance
                 <button className="btn btn-primary mx-2">+</button>
             </div>
         </>
